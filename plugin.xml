@@ -17,13 +17,8 @@
                 <param name="ios-package" value="TouchID" />
             </feature>
         </config-file>
-        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
-            <array>
-                <dict>
-                    <key>NSFaceIDUsageDescription</key>
-                    <string>Login via TouchID / FaceID</string>
-                </dict>
-            </array>
+        <config-file target="*-Info.plist" parent="NSFaceIDUsageDescription">
+            <string>Login with TouchID or FaceID</string>
         </config-file>
         <header-file src="src/ios/TouchID.h" />
         <source-file src="src/ios/TouchID.m" />
